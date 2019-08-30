@@ -37,5 +37,31 @@ https://themes.gohugo.io
 //下载此主题 git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c  主题会保存在/myblog/themes/目录下</description>
     </item>
     
+    <item>
+      <title>反射机制详解</title>
+      <link>https://wudeyan.github.io/post/blog2/</link>
+      <pubDate>Fri, 30 Aug 2019 20:38:44 +0800</pubDate>
+      
+      <guid>https://wudeyan.github.io/post/blog2/</guid>
+      <description>hugo个人博客搭建 环境搭建及配制 1.首先需要注册一个GitHub社区账号，并在GitHub社区上创建一个仓库
+仓库的命名必须是以
+&amp;quot;Username.github.io&amp;quot;  2.两个工具：
+1）git工具，Windows系统下使用powershell的scoop工具进行下载
+//安装scoop Set-ExecutionPolicy RemoteSigned -scope CurrentUser iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;) //下载速度过慢，可以利用aria2加速 scoop install aria2 //下载git工具 scoop install git  安装好git之后必须对git进行用户配置
+git config --global user.name &amp;quot;Username&amp;quot; git config --global user.email &amp;quot;xxxx@xxx.com&amp;quot;  为了方便使用，建议配置环境变量
+2)进入GitHub社区搜索hugo，下载Windows版本的hugo（32位，64位自选）
+https://github.com/gohugoio/hugo/releases
+同样下载解压之后，为方便使用，先配置环境变量
+博客搭建 1.进入hugo根目录，打开命令行界面，输入
+//验证hugo时候已经安装 hugo version  2.新建一个站点
+hugo new site myblog  发现会在根目录下创建一个myblog的文件夹
+cd myblog  进入该博客目录
+3.给自己的博客下载一个主题，可以到GitHub社区当中搜索
+https://themes.gohugo.io
+例如主题：m10c
+点开主题会介绍下载的命令
+//下载此主题 git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c  主题会保存在/myblog/themes/目录下</description>
+    </item>
+    
   </channel>
 </rss>
